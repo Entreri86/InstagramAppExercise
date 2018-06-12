@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  NavigationPage.HasNavigationBar="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InstagramAppExercise.View.InstaPage"
+             xmlns:local="clr-namespace:InstagramAppExercise.View"><!--Añadimos el espacio de nombres de las Vistas-->
+    <!--<TabbedPage.Padding> Padding especifico para iOS
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
+    </TabbedPage.Padding>-->
+    <!--Referencia a la Vista con los datos de la lista, primera pestaña-->
+    <local:UserNotificationList Title="Activities" Icon="heart.png"/>
+    <!--Referencia a la Vista con los datos del profile, segunda pestaña -->
+    <local:ProfilePage Title="My Profile" Icon="user.png"/>
+</TabbedPage>
